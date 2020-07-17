@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THUNDER</title>
+    <link rel="icon" href="icon/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="basic.css" />
+    <script src="basic.js"></script>
+</head>
+<body onload="year();fadein();">
+    <nav>
+        <a href="index.html"><img src="icon/thunder.png" class="logo" /></a>
+        <button class="menu" onclick="menu()"><img src="icon/menu.png" style="width: 50px;height: 50px;"></button>
+        <div id="dropdown" class="navbar">
+            <a href="laptop.html">Laptop</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="gear.html">Gear</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" class="btn"><img class="white" src="icon/cartwhite.png"><img class="black" src="icon/cartblack.png"> Shop Now</a>
+        </div>
+    </nav>
+    <section>
+        <img src="image/family.jpg" style="width:100%;">
+    </section>
+    <section class="laptop">
+        <img class="hidden hiddenpic" src="image/laptop2.jpg" />
+        <div id="fade1" class="vhidden">
+            <h2>Top-notch Gaming from Your Lap</h2>
+            <p>
+                Take a gaming hit wherever you go with our uncompromised, powerful laptops jam-packed with a full suite of gaming features.
+                It’s the ultimate gaming machine in a compact body – hand-crafted to your every and any need.
+            </p>
+            <br />
+            <a href="laptop.html" class="btn"><img class="white" src="icon/laptopwhite.png"><img class="black" src="icon/laptopblack.png">LEARN ABOUT THUNDER LAPTOPS</a>
+        </div>
+    </section>
+    <section class="desktop">
+        <img class="hidden  hiddenpic" src="image/desktop2.jpg" />
+        <div id="fade2" class="vhidden">
+            <h2>Unreal PC Performance.<br /> Surreal Gaming Experience.</h2>
+            <p>
+                Game harder, game bigger, and game longer with our state-of-the-art gaming desktops built to go all the way.
+                Best part? Make it your own by customizing your configurations and specs the way you like it, the way you want it.
+            </p>
+            <h2>It’s yours to play.</h2>
+            <a href="desktop.html" class="btn"><img class="white" src="icon/desktopwhite.png"><img class="black" src="icon/desktopblack.png">LEARN ABOUT THUNDER DESKTOPS</a>
+        </div>
+    </section>
+    <footer>
+        <p>  &copy Copyright 2011 - <span id="date"></span>.  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

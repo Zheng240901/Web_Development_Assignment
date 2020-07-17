@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TROPIKA | THUNDER</title>
+    <link rel="icon" href="icon/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="basic.css" />
+    <script src="basic.js"></script>
+</head>
+<body onload="year(); fadein();">
+    <nav>
+        <a href="index.html"><img src="icon/thunder.png" class="logo" /></a>
+        <button class="menu" onclick="menu()"><img src="icon/menu.png" style="width: 50px;height: 50px;"></button>
+        <div id="dropdown" class="navbar">
+            <a href="laptop.html">Laptop</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="gear.html">Gear</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" class="btn"><img class="white" src="icon/cartwhite.png"><img class="black" src="icon/cartblack.png"> Shop Now</a>
+        </div>
+    </nav>
+    <section style="padding-top:30px;text-align:center;font-size:40px;">
+        <img src="image/tropika1.jpg" style="width:100%;" />
+        <h2>TROPIKA</h2>
+    </section>
+    <section style="text-align:center;">
+        <a href="#gallery" class="btn quickbtn">Gallery</a>
+        <a href="#techspec" class="btn quickbtn">Tech Specs</a>
+    </section>
+    <section class="title">
+        <div id="fade1" class="vhidden">
+            <h2>Triple Your Gaming Experience</h2>
+            <p>TROIKA redefines the gaming experience with its out-of-this-world V-shape, tri-cabin casing that separates a gaming PC’s most heat generating parts into three compartments with individual airducts for a more effective cooling system in order to power longer hours of gaming and performance. TROIKA is every gamer’s dream machine not just for its cool aesthetics but for its incredible customization options. It can support up to RTX2080Ti full-length graphics, impeccable SSD and Hard Drives options, including the selection of Intel or AMD system setup, as well as a water-cooling setup.</p>
+        </div>
+    </section>
+    <section id="gallery" style="text-align:center;">
+        <h2>Gallery</h2>
+        <img onclick="modal(this)" src="image/tropika1.png" style="width:208px;height:208px;" />
+        <img onclick="modal(this)" src="image/tropika2.png" style="width:208px;height:208px;" />
+        <img onclick="modal(this)" src="image/tropika3.png" style="width:208px;height:208px;" />
+        <img onclick="modal(this)" src="image/tropika4.png" style="width:208px;height:208px;" />
+    </section>
+    <div id="modal" class="modal" onclick="closemodal()">
+        <span class="close" onclick="closemodal()">&times;</span>
+        <img class="modalimg fade-in" id="modalimg">
+    </div>
+    <section id="techspec" class="title">
+        <br />
+        <h2>TECH SPECS | TROPIKA</h2>
+    </section>
+    <section>
+        <table class="spec">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Form Factor</p>
+                    </td>
+                    <td>Mid Tower</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Motherboard</p>
+                    </td>
+                    <td>mITX</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Processor</p>
+                    </td>
+                    <td>
+                        <p>AMD Ryzen 3000 Processors</p>
+                        <p>9th Generation Intel Core i5, i7 and i9 Processors</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>RAM</p>
+                    </td>
+                    <td>
+                        Supports Dual Channel DDR4
+                        <p>Two 288 pins DIMM sockets, support for DDR4 2666/3200/3600/4266MHz<br /> (Real operation frequency depends on processor)</p>
+                        <p>Expandable up to 32GB, depends on 8GB/16GB DIMM module</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Graphics Card</p>
+                    </td>
+                    <td>
+                        Nvidia GeForce and Quadro Graphics
+                        <p>AMD Radeon Graphics</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Storage</p>
+                    </td>
+                    <td>
+                        Two changeable 3.5&Prime; HDD, SATA interface
+                        <p>Three changeable 2.5&rdquo; HDD/SSD, SATA interface</p>
+                        <p>One M.2 2280 SSD, SATA interface or PCIe Gen3 x4 interface (Subject to motherboard model)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>I/O Ports</p>
+                    </td>
+                    <td>
+                        USB3.0 x2
+                        <p>Audio x1</p>
+                        <p>Mic x1</p>
+                        <p>Motherboard I/O Ports (Subject to motherboard model)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Other Features</p>
+                    </td>
+                    <td>
+                        Full Steel Body Frame
+                        <p>2mm Thick Aluminum with Sandblasted Paint</p>
+                        <p>Optional Tempered Glass for GPU Cabin</p>
+                        <p>Optional ARGB LED for GPU Cabin</p>
+                        <p>Air Cooling or All-in-one Water Cooling</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Power</p>
+                    </td>
+                    <td>
+                        500W to 1200W
+                        <p>80+ Bronze, Silver, Gold or Platinum</p>
+                        <p>Non Modular, Semi Modular or Full Modular</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>OS Support</p>
+                    </td>
+                    <td>
+                        <p>Windows&reg; 10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Physical Characteristic</p>
+                    </td>
+                    <td>
+                        <p>395 (L) x 435 (W) x 388 (H) mm</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <p> &copy Copyright 2011 - <span id="date"></span>.  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

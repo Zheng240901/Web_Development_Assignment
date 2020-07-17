@@ -1,0 +1,78 @@
+        body
+        {
+            background-color: black;
+        }
+
+        div
+        {
+            border-style: solid;
+            border-top-width: 50px;
+            border-left-width:  150px;
+            border-right-width: 150px;
+            border-bottom-width: 50px;
+        }
+        .section1
+        {
+            background-color: #1A1818;
+            border-color: #1A1818;
+        }
+
+        .section2
+        {
+            background-color: #121111;
+            border-color: #121111;
+        }
+
+        .tableH1
+        {
+            height: 70px;
+            width: 1500px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .tableH2
+        {
+            height: 50px;
+            width: 1500px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+        }
+
+        .tableH3
+        {
+            height: 70px;
+            width: 1500px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+        }
+
+        .tableImg
+        {
+            height: 100px;
+            text-align: center;
+        }
+
+        .tableName
+        {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .tableInfo
+        {
+            vertical-align: top;
+            text-align: left;
+            color: white;
+        }
+
+        .tableButton
+        {
+            text-align: center;
+            width: 300px;
+            height: 50px;
+        }

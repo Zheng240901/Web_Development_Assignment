@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DUEL | THUNDER</title>
+    <link rel="icon" href="icon/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="basic.css" />
+    <script src="basic.js"></script>
+</head>
+<body onload="year(); fadein();">
+    <nav>
+        <a href="index.html"><img src="icon/thunder.png" class="logo" /></a>
+        <button class="menu" onclick="menu()"><img src="icon/menu.png" style="width: 50px;height: 50px;"></button>
+        <div id="dropdown" class="navbar">
+            <a href="laptop.html">Laptop</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="gear.html">Gear</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" class="btn"><img class="white" src="icon/cartwhite.png"><img class="black" src="icon/cartblack.png"> Shop Now</a>
+        </div>
+    </nav>
+    <section style="padding-top:30px;text-align:center;font-size:40px;">
+        <img src="image/duel1.jpg" style="width:100%;" />
+        <h2>DUEL BACKPACK</h2>
+    </section>
+    <section style="text-align:center;">
+        <a href="#gallery" class="btn quickbtn">Gallery</a>
+        <a href="#techspec" class="btn quickbtn">Tech Specs</a>
+    </section>
+    <section class="title">
+        <div id="fade1" class="vhidden">
+            <h2>Move with Finesse</h2>
+            <p>We got your back. Literally and figuratively. We conceptualized DUEL with the serious gamer and fast-moving users like yourself in mind. For those who game on-the-go, as well as those whose daily pursuits take them from one place to another, it is your perfect companion. Combining form, function and protection, DUEL provides maximum protection for your gears, in addition to a host of user-oriented features, all neatly tailored into one sleek and stylish-looking backpack.</p>
+        </div>
+    </section>
+    <section>
+        <img src="image/duel2.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade2" class="vhidden">
+            <h2>Style, Comfort & Durability</h2>
+            <p>Made with selected premium materials, DUEL is designed to not only look and feel awesome when carried, but to also stay awesome even under harsh conditions. Its strong construction using high quality polyester material gives DUEL outstanding durability including resistance to stretching, chemicals and heat, among many other superior physical qualities.</p>
+        </div>
+    </section>
+    <section>
+        <img src="image/duel3.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade3" class="vhidden">
+            <h2>Armor for Your Gears</h2>
+            <p>We get it. We’re terrified about those accidental knocks and drops as well, and they can happen when we least expect it. That’s why DUEL is designed to provide maximum protection for your valuable laptop and gears with an EVA molded shield and thick paddings integrated in all the critical areas.</p>
+        </div>
+    </section>
+    <section>
+        <img src="image/duel4.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade4" class="vhidden">
+            <h2>Ahead of The Pack</h2>
+            <p>
+                When you are out and about, you need all the support and convenience you can get to stay ahead. Designed with good load stability, DUEL makes heavy loads more manageable so you can carry more with less effort.
+                <br />
+                It also comes with an extended USB charging port allowing you to connect to your power bank in the backpack to charge your device in use without having to carry the power bank around.
+            </p>
+        </div>
+    </section>
+    <section id="gallery" style="text-align:center;">
+        <h2>Gallery</h2>
+        <img onclick="modal(this)" src="image/duel1.png" style="width:208px;height:238px;" />
+        <img onclick="modal(this)" src="image/duel2.png" style="width:208px;height:238px;" />
+        <img onclick="modal(this)" src="image/duel3.png" style="width:208px;height:238px;" />
+        <img onclick="modal(this)" src="image/duel4.png" style="width:208px;height:238px;" />
+    </section>
+    <div id="modal" class="modal" onclick="closemodal()">
+        <span class="close" onclick="closemodal()">&times;</span>
+        <img class="modalimg fade-in" id="modalimg">
+    </div>
+    <section id="techspec" class="title">
+        <br />
+        <h2>TECH SPECS | DUEL</h2>
+        <p>Width 310mm, Length 440mm, Depth 110mm.</p>
+    </section>
+    <footer>
+        <p> &copy Copyright 2011 - <span id="date"></span>.  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

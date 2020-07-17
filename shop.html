@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CART | THUNDER</title>
+    <link rel="icon" href="icon/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <script src="basic.js"></script>
+    <style>
+    </style>
+</head>
+<body onload="year(); shipaddress(); price();">
+    <nav>
+        <a href="index.html"><img src="icon/thunder.png" class="logo" /></a>
+        <button class="menu" onclick="menu()"><img src="icon/menu.png" style="width: 50px;height: 50px;"></button>
+        <div id="dropdown" class="navbar">
+            <a href="laptop.html">Laptop</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="gear.html">Gear</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" class="btn"><img class="white" src="icon/cartwhite.png"><img class="black" src="icon/cartblack.png"> Shop Now</a>
+        </div>
+    </nav>
+    <section>
+        <br /><br /><br />
+        <h2>Checkout</h2>
+        <div class="row">
+            <div class="col-75">
+                <div class="box">
+                    <form action="index.html" onsubmit="alert('Order received. Thank you!');">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><img src="icon/user.png" style="width:13px;height:13px;" /> Full Name</label>
+                                <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                                <label for="email"><img src="icon/email.png" style="width:13px;height:13px;" /> Email</label>
+                                <input type="text" id="email" name="email" placeholder="name@example.com">
+                                <label for="adr"><img src="icon/addresscard.png" style="width:13px;height:13px;" /> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="Address">
+                                <label for="city"><img src="icon/city.png" style="width:13px;height:13px;" /> City</label>
+                                <input type="text" id="city" name="city" placeholder="City">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" name="zip" placeholder="XXXXX">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="State">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="iconbox">
+                                    <img src="icon/card.png" style="width:110px;height:40px;" />
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Full Name">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label>Expiration Date</label>
+                                        <select name="expmonth">
+                                            <option value="01">January</option>
+                                            <option value="02">February </option>
+                                            <option value="03">March</option>
+                                            <option value="04">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">June</option>
+                                            <option value="07">July</option>
+                                            <option value="08">August</option>
+                                            <option value="09">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                        <select name="expyear">
+                                            <option value="20"> 2020</option>
+                                            <option value="21"> 2021</option>
+                                            <option value="22"> 2022</option>
+                                            <option value="23"> 2023</option>
+                                            <option value="24"> 2024</option>
+                                            <option value="25"> 2025</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="XXX">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" id="sameadr" name="sameadr" onclick="shipaddress()"> Shipping address same as billing
+                        </label>
+                        <div id="shipadr" class="col-50">
+                            <h3>Shipping Address</h3>
+                            <label for="fname"><img src="icon/user.png" style="width:13px;height:13px;" /> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                            <label for="email"><img src="icon/email.png" style="width:13px;height:13px;" /> Email</label>
+                            <input type="text" id="email" name="email" placeholder="name@example.com">
+                            <label for="adr"><img src="icon/addresscard.png" style="width:13px;height:13px;" /> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="Address">
+                            <label for="city"><img src="icon/city.png" style="width:13px;height:13px;" /> City</label>
+                            <input type="text" id="city" name="city" placeholder="City">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="XXXXX">
+                                </div>
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="State">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="col-25">
+                <div class="box">
+                    <br />
+                    <span style="font-size: 1.17em;font-weight:bold;"><img src="icon/cartwhite.png" style="width:15px;height:15px;" />   Cart</span>
+                    <hr>
+                    <div class="cartrow row" id="cart">
+                        <div class="col-50">
+                            <label for="product">Product</label>
+                            <select id="product" onchange="price()">
+                                <option value="3199" selected>Raven</option>
+                                <option value="4999">Prodigy</option>
+                                <option value="6199">Onyx</option>
+                                <option value="7599">Onyx Pro</option>
+                                <option value="2599">Raider</option>
+                                <option value="2899">Tropika</option>
+                                <option value="2899">Poseidon</option>
+                                <option value="4999">Poseidon XE</option>
+                                <option value="139">Duel Backpack</option>
+                                <option value="69">Mat Master</option>
+                            </select>
+                        </div>
+                        <div class="col-50">
+                            <label for="qty">Quantity</label>
+                            <input type="number" id="qty" name="qty" placeholder="1" min="1" value="1" style="float:right;" onchange="price()">
+                        </div>
+                    </div>
+                    <button class="btn" id="add" onclick="add(); price();">Add item</button>
+                    <button class="btn" id="remove" onclick="remove();price();">Remove item</button>
+                    <br />
+                    <hr>
+                    <p>Total (include tax) <span class="price" style="color:white" id="total"></span></p>
+                </div>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <p> &copy Copyright 2011 - <span id="date"></span>.  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

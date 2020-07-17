@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAT MASTER | THUNDER</title>
+    <link rel="icon" href="icon/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="basic.css" />
+    <script src="basic.js"></script>
+</head>
+<body onload="year(); fadein();">
+    <nav>
+        <a href="index.html"><img src="icon/thunder.png" class="logo" /></a>
+        <button class="menu" onclick="menu()"><img src="icon/menu.png" style="width: 50px;height: 50px;"></button>
+        <div id="dropdown" class="navbar">
+            <a href="laptop.html">Laptop</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="gear.html">Gear</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" class="btn"><img class="white" src="icon/cartwhite.png"><img class="black" src="icon/cartblack.png"> Shop Now</a>
+        </div>
+    </nav>
+    <section style="padding-top:30px;text-align:center;font-size:40px;">
+        <img src="image/matmaster1.jpg" style="width:100%;" />
+    </section>
+    <section style="text-align:center;">
+        <a href="#gallery" class="btn quickbtn">Gallery</a>
+        <a href="#techspec" class="btn quickbtn">Tech Specs</a>
+    </section>
+    <section class="title">
+        <div id="fade1" class="vhidden">
+            <h2>Set Your Gaming Foundation Right</h2>
+            <p>Introducing MATMASTER, THUNDER’s first gaming mouse mat made to improve your comfort and agility during gameplay. Matmaster comes in 2 editions: speed or control – both built to last against water and other extreme gaming wear and tear.</p>
+        </div>
+    </section>
+    <section>
+        <img src="image/matmaster2.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade2" class="vhidden">
+            <h2>Choose SPEED</h2>
+            <p>The Matmaster Speed edition uses high-quality polyester materials treated with friction-reducing coating to allow you to glide through your game with lightning fast mouse movements.</p>
+        </div>
+    </section>
+    <section>
+        <img src="image/matmaster3.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade3" class="vhidden">
+            <h2>Choose CONTROL</h2>
+            <p>The Matmaster Control edition uses high-quality jacquard fabric coated with the perfect amount of surface friction and texture to ensure every movement is conscious and precise. Suitable for FPS gamers looking for extreme control and accuracy.</p>
+        </div>
+    </section>
+    <section>
+        <img src="image/matmaster4.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade4" class="vhidden">
+            <p>Built for</p>
+            <h2>Intensity</h2>
+            <p>
+                The Matmaster is made to resist the stressors of extreme gaming conditions with its stress-resistant and water-resistant build – hardy against spilled drinks and intense gameplays.
+            </p>
+        </div>
+    </section>
+    <section>
+        <img src="image/matmaster5.jpg" style="width:100%;" />
+    </section>
+    <section class="title">
+        <div id="fade4" class="vhidden">
+            <p>Built for</p>
+            <h2>Long-lasting Comfort</h2>
+            <p>
+                The Matmaster features a stitched border to prevent fraying edges over time, plus a thick 5mm padding with rubberized backing for maximum comfort and no-slip grip even on uneven surfaces.
+            </p>
+        </div>
+    </section>
+    <section id="gallery" style="text-align:center;">
+        <h2>Gallery</h2>
+        <img onclick="modal(this)" src="image/matmaster1.png" style="width:208px;height:208px;" />
+        <img onclick="modal(this)" src="image/matmaster2.png" style="width:208px;height:208px;" />
+        <img onclick="modal(this)" src="image/matmaster3.png" style="width:208px;height:208px;" />
+        <img onclick="modal(this)" src="image/matmaster4.png" style="width:208px;height:208px;" />
+    </section>
+    <div id="modal" class="modal" onclick="closemodal()">
+        <span class="close" onclick="closemodal()">&times;</span>
+        <img class="modalimg fade-in" id="modalimg">
+    </div>
+    <section id="techspec" class="title">
+        <br />
+        <h2>TECH SPECS | matmaster</h2>
+        <p>Width 320mm, Length 270mm, Thickness 5mm.</p>
+    </section>
+    <footer>
+        <p> &copy Copyright 2011 - <span id="date"></span>.  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

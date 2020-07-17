@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+}
+
+.background {
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-bottom: 20px solid;
+}
+
+.background h2
+{
+    text-align: center;
+}
+
+.backgroundImg {
+    background-size: 100%;
+}
+
+.Header {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.indroductionBox {
+    border: white 2px solid;
+    width: 1100px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduction {
+    width: 1000px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    border: solid 50px black;
+}
+
+.info {
+    text-align: justify;
+    color: white;
+    padding-top: 10%;
+    padding-left: 78%;
+    width: 300px;
+}
+
+.gallery {
+    background-color: black;
+    border-style: solid;
+    text-align: center;
+    border-bottom: solid 20px black;
+}
+
+.galleryHeader {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.galleryImg {
+    height: 240px;
+    width: 180px;
+    border-left: 30px solid;
+    border-right: 30px solid;
+}
+
+.techSpecsHeader {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: solid 10px black;
+}
+
+.techSpecs {
+    border-top: solid 10px black;
+    border-left: solid 70px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.techSpecs td {
+    border-bottom: solid 1px white;
+}
+
+.tableTitle {
+    background-color: black;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.Specs {
+    background-color: black;
+    width: 1000px;
+    text-align: left;
+    color: white;
+}
+
+.buttonSection {
+    text-align: center;
+    border: solid 20px black;
+}
